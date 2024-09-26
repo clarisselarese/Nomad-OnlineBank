@@ -1,0 +1,60 @@
+// ****** FONTS ******* //
+$font1: Montserrat Alternates, sans-serif;
+$font2: Bai Jamjuree, sans-serif;
+
+// ****** COLORS ****** //
+$black: rgb(59, 60, 60);
+$white: rgb(249, 249, 249);
+$hellgrey: rgb(243, 247, 251);
+$darkgrey: rgb(154,154,154);
+$color1: rgb(48,146,229);
+$color2: rgb(76,214,146);
+$gradient: linear-gradient(45deg, #5E60CE, #00C9FF, #92FE9D );
+
+// ****** MIXINS ****** //
+
+@mixin Flex ($space) {
+    display: flex;
+    align-items: center;
+    justify-content: ($space);
+}
+
+@mixin paddingGeneral {
+    padding-left: 136px;
+    padding-right: 136px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bai Jamjuree';
+    letter-spacing: 0.7px;
+}
+
+h1, h2 {
+    color: $color1;
+    font-family: 'Montserrat Alternates';
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: $black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+p {
+    line-height: 160%;
+    font-size: 1.1rem;
+    font-weight: 300;
+}

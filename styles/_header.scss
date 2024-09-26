@@ -1,0 +1,126 @@
+.prenav {
+  height: 7vh;
+  background: $hellgrey;
+  border-bottom: 1px solid rgb(102, 195, 244);
+  @include Flex(center);
+  position: relative;
+
+  p {
+    font-size: 0.90rem;
+    font-weight: 300;
+  }
+
+  .prenav-text {
+    @include Flex(center);
+    gap: 5px;
+
+    span {
+      color: $color1;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .prenav-language {
+    @include Flex(center);
+    position: absolute;
+    right: 10%;
+    gap: 5px;
+
+    i {
+      color: $color1;
+    }
+  }
+}
+
+nav {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 65% 15%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 20px 0;
+  @include paddingGeneral;
+  box-shadow: 0px 2px 8px 0px #0000000D;
+
+  img {
+    width: 90%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0;
+
+    li {
+      padding: 0 3%;
+      text-align: center;
+    }
+
+  }
+
+  button {
+    padding: 12px 10px;
+  }
+  
+  .burger-menu {
+    display: none;
+  }
+}
+
+
+
+.main-header {
+  min-height: 83vh;
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  @include paddingGeneral;
+
+  .header-text {
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 160%;
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding: 40px 0 30px;
+    }
+
+    ul {
+      line-height: 40px;
+      padding-bottom: 30px;
+      font-weight: 300;
+
+      i {
+        padding-right: 15px;
+        color: $color2;
+        font-size: 1.2rem;
+      }
+    }
+
+    .secondary-btn {
+      margin-left: 10px;
+    }
+  }
+
+  .header-img {
+    background: url('../img/BG_hero.png') center/cover no-repeat;
+    background-size: contain;
+    height: 100%;
+
+  }
+
+
+}

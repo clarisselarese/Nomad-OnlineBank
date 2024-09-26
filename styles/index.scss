@@ -1,0 +1,55 @@
+@import "./settings";
+@import "./header";
+@import "./section1-benefits";
+@import "./section2-plans";
+@import "./section3-cashback";
+@import "./section4-icons";
+@import "./section5-chat";
+@import "./section6-invite";
+@import "./section7-blog";
+@import "./section8-blueCTA";
+@import "./footer";
+
+
+
+// button {
+//     padding: 10px 20px;
+//     font-size: 1rem;
+//     font-weight: 500;
+//     background-color: white;
+//     color: $color1;
+//     border: 3px solid transparent; 
+//     border-image: $gradient 1;  
+//     overflow: hidden; 
+//     cursor: pointer;
+//     font-family: 'Bai Jamjuree';
+//   }
+
+button {
+    border: 2.5px solid transparent;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Bai Jamjuree';
+    color: $color1;
+    border-radius: 7px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #5E60CE,#00C9FF, #92FE9D);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    cursor: pointer;
+
+    &:hover {
+      background: radial-gradient(circle at top left, #5E60CE,#00C9FF, #92FE9D);
+      border: 2.5px solid white;
+      color: $white;
+    }
+  }
+
+  .secondary-btn {
+    border-color: $color1;
+
+    &:hover {
+      background: $color1;
+      color: $white;
+    }
+  }
