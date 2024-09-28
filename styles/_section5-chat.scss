@@ -1,0 +1,67 @@
+.section5-chat {
+    @include paddingGeneral;
+    background: $color2;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        justify-content: center;
+        max-width: 75%;
+        max-height: 100%;
+        background: $color2;
+        align-items: center;
+
+        .chat-img {
+            background: url(../img/Phone.png) center/cover no-repeat;
+            height: 100%;
+            background-size: contain;
+            background-position: bottom;
+            transition: 0.5s ease;
+
+            &:hover {
+                transform: translateY(10px);
+            }
+        }
+
+        .chat-text {    
+            position: relative;
+            
+            &:after {
+                content: "";
+                position: absolute;
+                background-image: url(../img/Bubble.svg);
+                width: 70px;
+                height: 69.19px;
+                bottom: -20px;
+                right: -50px;
+            }
+
+            h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            font-size: 1.1rem;
+            padding: 20px 0 30px;
+        }
+
+        .secondary-btn {
+            border-color: $white;
+            background: $color2;
+            color: $white;
+
+            &:hover {
+                background: $white;
+                color: $color2;
+            }
+        }
+    }
+    }
+}

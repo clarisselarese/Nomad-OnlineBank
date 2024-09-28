@@ -1,0 +1,43 @@
+.section4-icons {
+    @include paddingGeneral;
+    padding-top: 80px;
+    background: url(../img/Couple.png) no-repeat; 
+  background-size: contain;
+  background-position: center top;
+
+
+    .container {
+        position: relative;
+        padding: 80px;
+        background: linear-gradient(to bottom, $white 70%, #ffffff 100%);
+        border-radius: 10px;
+        max-width: 1440px;
+        margin: 300px auto 80px;
+
+
+        .lead-text {
+            padding: 20px 0 30px;
+            width: 70%;
+        }
+
+        .icons-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+
+            .card {
+
+                .title {
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding-bottom: 16px;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

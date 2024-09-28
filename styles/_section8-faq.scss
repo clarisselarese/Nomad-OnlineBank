@@ -1,0 +1,54 @@
+.section8-faq {
+    @include paddingGeneral;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: $hellgrey;
+
+    .questions-and-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+
+        .questions {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+            gap: 20px;
+            width: 100%;
+
+            .question {
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.100);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color2;
+                }
+
+                i {
+                    color: $color2;
+                }
+            }
+
+        }
+
+        .secondary-btn {
+            background: $hellgrey;
+            margin-top: 40px;
+
+            &:hover {
+                background: $color1;
+                color: $white;
+            }
+        }
+
+
+    }
+}

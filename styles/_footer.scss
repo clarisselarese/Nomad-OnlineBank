@@ -1,4 +1,43 @@
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @include paddingGeneral;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+
+    h6 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $black;
+    }
+
+    li {
+        padding-bottom: 16px;
+        font-size: 1rem;
+        color: $black;
+    }
+
+    i {
+        cursor: pointer;
+        color: $color1;
+        font-size: 1.1rem;
+        margin-top: 16px;
+        margin-right: 10px;
+        padding: 10px;
+        // border: 2px solid $color1;
+        // border-radius: 10px;
+        border: 2.5px solid transparent;
+        background-image: linear-gradient(white, white), radial-gradient(circle at top left, #5E60CE,#00C9FF, #92FE9D);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        border-radius: 10px;
+
+        &:hover {
+            background: radial-gradient(circle at top left, #5E60CE,#00C9FF, #92FE9D);
+            border: 2.5px solid white;
+            color: $white;
+          }
+    }
 }

@@ -31,7 +31,8 @@
         .benefits-right {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            row-gap: 30px;
+            column-gap: 80px;
 
             .title {
                 @include Flex (flex-start);

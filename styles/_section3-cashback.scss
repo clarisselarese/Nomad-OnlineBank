@@ -1,0 +1,20 @@
+.section3-cashback {
+    @include paddingGeneral;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    min-height: 90vh;
+    align-items: center;
+
+    .cashback-img {
+        background: url(../img/Cashback.png) center/cover no-repeat;
+        height: 100%;
+        background-size: contain;
+    }
+
+    p {
+        padding: 20px 0 30px;
+    }
+}

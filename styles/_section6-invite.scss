@@ -1,0 +1,35 @@
+.section6-invite {
+    padding-top: 50px;
+    margin-left: 136px;
+    padding-bottom: 80px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 140px;
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+    
+        .invite-text {
+            padding-top: 60px;
+
+            p {
+                font-size: 1.1rem;
+                padding: 20px 0 30px;
+            }
+        }
+
+    
+        .invite-img {
+            background: url(../img/Friends.png) center/cover no-repeat;
+            height: 100%;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 15px;
+        }
+    }
+
+
+}
